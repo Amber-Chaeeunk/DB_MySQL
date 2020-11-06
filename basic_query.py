@@ -17,9 +17,9 @@ for row in rows :
 
 
 
-########################
+#########################
 ## 테이블에 데이터 추가 ##
-#######################
+########################
 
 conn = pymysql.connect(host='localhost', user='root', password="rlacodms2ek.", db="world", charset="utf8")
 curs = conn.cursor()
