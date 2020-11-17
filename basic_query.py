@@ -1,8 +1,7 @@
 import pymysql
 
-#######################
-## DB 데이터 가져오기 ##
-######################
+
+#DB 데이터 가져오기
 
 conn = pymysql.connect(host='localhost', user='root', password="******", db="world", charset="utf8")
 curs = conn.cursor(pymysql.cursors.DictCursor)
@@ -17,9 +16,8 @@ for row in rows :
 
 
 
-#########################
-## 테이블에 데이터 추가 ##
-########################
+
+#테이블에 데이터 추가
 
 conn = pymysql.connect(host='localhost', user='root', password="rlacodms2ek.", db="world", charset="utf8")
 curs = conn.cursor()
@@ -41,9 +39,7 @@ exit()
 
 
 
-#################
-## 수정 쿼리문 ##
-################
+# 수정 쿼리문
 
 conn = pymysql.connect(host='localhost', user='root', password="rlacodms2ek.", db="world", charset="utf8")
 curs = conn.cursor()
@@ -60,9 +56,7 @@ exit()
 
 
 
-#################
-## 삭제 쿼리문 ##
-################
+#삭제 쿼리문
 
 conn = pymysql.connect(host='localhost', user='root', password="rlacodms2ek.", db="world", charset="utf8")
 curs = conn.cursor()
@@ -79,9 +73,8 @@ exit()
 
 
 
-#################
-## DB 닫아주기 ##
-################
+
+#DB close
 
 conn = pymysql.connect(host='localhost', user='root', password="rlacodms2ek.", db="world", charset="utf8")
 try:
