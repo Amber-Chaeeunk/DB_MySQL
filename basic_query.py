@@ -4,7 +4,7 @@ import pymysql
 ## DB 데이터 가져오기 ##
 ######################
 
-conn = pymysql.connect(host='localhost', user='root', password="rlacodms2ek.", db="world", charset="utf8")
+conn = pymysql.connect(host='localhost', user='root', password="******", db="world", charset="utf8")
 curs = conn.cursor(pymysql.cursors.DictCursor)
 sql = "select * from user where region =%s"  #region이 조건 스트링에 해당하면, user로부터 모든 변수 가져오기
 curs.execute(sql, '대전')
