@@ -19,7 +19,7 @@ for row in rows :
 
 #테이블에 데이터 추가
 
-conn = pymysql.connect(host='localhost', user='root', password="rlacodms2ek.", db="world", charset="utf8")
+conn = pymysql.connect(host='localhost', user='root', password="*****", db="world", charset="utf8")
 curs = conn.cursor()
 sql = """insert into user(id, name, region, insdt)
         values(%s, %s, %s, now())"""
@@ -41,7 +41,7 @@ exit()
 
 # 수정 쿼리문
 
-conn = pymysql.connect(host='localhost', user='root', password="rlacodms2ek.", db="world", charset="utf8")
+conn = pymysql.connect(host='localhost', user='root', password="************", db="world", charset="utf8")
 curs = conn.cursor()
 sql = """update user set region='서울특별시' where region='서울'"""
 curs.execute(sql)
@@ -58,7 +58,7 @@ exit()
 
 #삭제 쿼리문
 
-conn = pymysql.connect(host='localhost', user='root', password="rlacodms2ek.", db="world", charset="utf8")
+conn = pymysql.connect(host='localhost', user='root', password="**********", db="world", charset="utf8")
 curs = conn.cursor()
 sql = """delete from user where region=%s"""
 curs.execute(sql,'광주')
@@ -76,7 +76,7 @@ exit()
 
 #DB close
 
-conn = pymysql.connect(host='localhost', user='root', password="rlacodms2ek.", db="world", charset="utf8")
+conn = pymysql.connect(host='localhost', user='root', password="***********", db="world", charset="utf8")
 try:
     curs = conn.cursor()
     sql = """delete from user where region=%s"""
